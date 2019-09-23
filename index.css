@@ -1,0 +1,71 @@
+body{
+    color: white;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 20%;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 10px;
+}
+
+.main .js-greeting {
+    font-size: 40px;
+    padding: 10px;
+    margin: 0px;
+}
+
+.js-toDoForm input {
+    height: 15px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.clicked {
+    color: #7f8c8d;
+}
+
+
+
+
+.form,.greetiongs {
+    display: none;
+}
+
+.showing{
+    display: block;
+}
+
+@keyframes fadeIn{
+    0%{
+        display: none;
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+        display: none;
+    }
+    100%{
+        opacity: 1;
+        display: block;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    animation: fadeIn 1s linear;
+    
+}
